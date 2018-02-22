@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!--
+    - Device: prague
+    - author: NetfariousIntent
+    - date: 22.2.2018 
+    - rom: LineageOS
+    - hi kmx: :*
+    -->
+
+    <!-- Remote -->
+    <remote fetch="https://github.com/hak86/" name="prague" />
+    <remote fetch="https://github.com/netfariousintent/" name="nef" />
+
+    <!-- Device -->
+    <project name="android_device_huawei_prague" path="device/huawei/prague" remote="nef" revision="android-7.1" />
+
+    <!-- Kernel -->
+    <project name="android_kernel_huawei_prague" path="kernel/huawei/prague" remote="prague" revision="7.x" />
+
+    <!-- Vendor -->
+    <project name="android_vendor_huawei_prague" path="vendor/huawei/prague" remote="prague" revision="7.x" />
+    
+    <!-- Misc -->
+    <project name="LineageOS/android_external_stlport" path="external/stlport" remote="github" revision="cm-14.1" />
+    <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="cm-14.1" />
+    <project name="LineageOS/android_packages_apps_FlipFlap" path="packages/apps/FlipFlap" remote="github" revision="cm-14.1" />
+</manifest>
